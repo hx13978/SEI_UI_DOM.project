@@ -12,7 +12,11 @@ let huskyPics = " https://dog.ceo/api/breed/husky/images/random/1"
 let retrieverPics = " https://dog.ceo/api/breed/retriever/images/random/1"
 let spanielPics = " https://dog.ceo/api/breed/spaniel/images/random/1"
 
+
 let anchor = document.querySelector('.dogimg');
+
+//Section to select Beagle anchor, use a function to fetch a random dog image and assign it to the anchor.src, and then use a click event listener to call the function.
+
 let anchorBeagle = document.querySelector('.beagle');
 //console.log(anchorBeagle);
 
@@ -27,6 +31,7 @@ function beagleImages() {
 
 anchorBeagle.addEventListener('click', beagleImages);
 
+//Section to select Husky anchor, use a function to fetch a random dog image and assign it to the anchor.src, and then use a click event listener to call the function.
 
 let anchorHusky = document.querySelector('.husky');
 //console.log(anchorHusky);
@@ -42,7 +47,7 @@ function huskyImages() {
 
 anchorHusky.addEventListener('click', huskyImages);
 
-
+//Section to select Retriever anchor, use a function to fetch a random dog image and assign it to the anchor.src, and then use a click event listener to call the function.
 
 
 let anchorRetriever = document.querySelector('.retriever');
@@ -59,6 +64,7 @@ function retrieverImages() {
 
 anchorRetriever.addEventListener('click', retrieverImages);
 
+//Section to select Spaniel anchor, use a function to fetch a random dog image and assign it to the anchor.src, and then use a click event listener to call the function.
 
 let anchorSpaniel = document.querySelector('.spaniel');
 //console.log(anchorSpaniel);
