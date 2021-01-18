@@ -12,13 +12,14 @@ let huskyPics = " https://dog.ceo/api/breed/husky/images/random/1"
 let retrieverPics = " https://dog.ceo/api/breed/retriever/images/random/1"
 let spanielPics = " https://dog.ceo/api/breed/spaniel/images/random/1"
 
+let anchor = document.querySelector('.dogimg');
 let anchorBeagle = document.querySelector('.beagle');
 //console.log(anchorBeagle);
 
 function beagleImages() {
   fetch(beaglePics)
     .then(response => response.json())
-    .then(json => anchorBeagle.href = json.message[0])
+    .then(json => anchor.src = json.message[0])
       //console.log(json);
 
   .catch(err => console.log("Something has gone wrong."))
@@ -33,7 +34,7 @@ let anchorHusky = document.querySelector('.husky');
 function huskyImages() {
   fetch(huskyPics)
     .then(response => response.json())
-    .then(json => anchorHusky.href = json.message[0])
+    .then(json => anchor.src = json.message[0])
       //console.log(json);
 
   .catch(err => console.log("Something has gone wrong."))
@@ -50,7 +51,7 @@ let anchorRetriever = document.querySelector('.retriever');
 function retrieverImages() {
   fetch(retrieverPics)
     .then(response => response.json())
-    .then(json => anchorRetriever.href = json.message[0])
+    .then(json => anchor.src = json.message[0])
       //console.log(json);
 
   .catch(err => console.log("Something has gone wrong."))
@@ -65,7 +66,7 @@ let anchorSpaniel = document.querySelector('.spaniel');
 function spanielImages() {
   fetch(spanielPics)
     .then(response => response.json())
-    .then(json => anchorSpaniel.href = json.message[0])
+    .then(json => anchor.src = json.message[0])
       //console.log(json);
 
   .catch(err => console.log("Something has gone wrong."))
