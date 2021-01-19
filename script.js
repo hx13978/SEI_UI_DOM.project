@@ -1,3 +1,5 @@
+//Code to open and close sidepanel menu via a click
+
 function openNav() {
   document.getElementById("mySidepanel").style.width = "250px";
 }
@@ -6,6 +8,7 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+//API links to pull different random dog breed images
 
 let beaglePics = " https://dog.ceo/api/breed/beagle/images/random/1"
 let huskyPics = " https://dog.ceo/api/breed/husky/images/random/1"
@@ -82,11 +85,3 @@ anchorSpaniel.addEventListener('click', spanielImages);
        
 
 
-
-function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-  }

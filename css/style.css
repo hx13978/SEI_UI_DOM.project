@@ -15,6 +15,7 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    font-family: 'Goudy Bookletter 1911', serif;
 }
 
 .sidepanel a {
